@@ -1,0 +1,16 @@
+
+.button__wrapper-primary{
+    @apply bg-[#32736A] hover:bg-[#245f4b];
+}
+.button__wrapper-warning{
+    @apply bg-[#32736A] hover:bg-[#245f4b];
+}
+.button__wrapper-destructive{
+    @apply bg-[#32736A] hover:bg-[#245f4b];
+}
+.button__wrapper-signin{
+    @apply bg-[#32736A] hover:bg-[#245f4b] border ;
+}
+.button__wrapper-signup{
+    @apply bg-white hover:bg-white/80 text-[#32736A];
+}

@@ -1,0 +1,19 @@
+.navbar__wrapper{
+    @apply bg-[#32736A];
+
+    .nav{
+        @apply text-white px-4  flex justify-between items-center mx-4;
+
+        .logo{
+            @apply flex items-center;
+        }
+
+        .navLinks__wrapper{
+            @apply hidden md:flex md:gap-8 md:ml-10;
+            
+            .link{
+                @apply hover:bg-[#2B5B55] px-4 py-2 rounded-md;
+            }
+        }
+    }
+}
