@@ -1,0 +1,15 @@
+.pricingSection__wrapper{
+    @apply text-center mb-8 p-8 md:px-32 md:py-16 bg-[#F3FAF8];
+
+    .mainHeading{
+        @apply font-bold text-5xl text-[#2A5B55] mb-4;
+
+        span{
+            @apply text-[#D8EFE9];
+        }
+    }
+
+    .para{
+        @apply text-[#9EA0A0] font-normal text-base mb-20;
+    }
+}

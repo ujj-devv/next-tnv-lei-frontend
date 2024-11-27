@@ -12,5 +12,6 @@ export enum ShadButtonVariant {
       WARNING = "warning",
       DANGER = "danger",
       SIGNIN = "signin",
-      SIGNUP = "signup"
+      SIGNUP = "signup",
+      INACTIVE = "inactive"
   }

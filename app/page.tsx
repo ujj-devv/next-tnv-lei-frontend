@@ -5,6 +5,7 @@ import FAQSection from '@/components/pages/Home/FaqSection/FaqSection'
 import HeroSection from '@/components/pages/Home/HeroSection/HeroSection'
 import LEIApplicationGuide from '@/components/pages/Home/LeiApplicationGuide/LeiApplicationGuide'
 import LEIBenefitsOverview from '@/components/pages/Home/LeiBenefitsOverview/LeiBenefitsOverview'
+import PricingSection from '@/components/pages/Home/PricingSection/PricingSection'
 import ServiceOverview from '@/components/pages/Home/ServiceOverview/ServiceOverview'
 import store from '@/store/store'
 import React from 'react'
@@ -19,6 +20,7 @@ const page = () => {
       <LEIApplicationGuide/>
       <AboutUs />
       <AvailableCertifications />
+      <PricingSection/>
       <FAQSection />
     </Provider>
   )

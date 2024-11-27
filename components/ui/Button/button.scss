@@ -14,3 +14,6 @@
 .button__wrapper-signup{
     @apply bg-white hover:bg-white/80 text-[#32736A];
 }
+.button__wrapper-inactive{
+    @apply bg-[#F3FAF8] hover:bg-white/80 text-[#32736A];
+}
