@@ -10,7 +10,7 @@
     }
 
     .row{
-        @apply group even:bg-gray-50 hover:bg-[#32736A] hover:text-white;
+        @apply even:bg-gray-50 hover:bg-[#32736A] hover:text-white;
 
         .cell{
             @apply px-4 py-2 text-gray-600 group-hover:text-white;

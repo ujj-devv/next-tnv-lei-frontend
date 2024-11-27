@@ -1,11 +1,12 @@
+import { ReactNode } from "react";
 import { ShadButtonType, ShadButtonVariant } from "./button.enums";
 
 export type ShadButtonPropTypes = {
-    buttonText: string;
-    variant?: ShadButtonVariant;
-    isDisabled?: boolean;
-    type: ShadButtonType;
-    isLoading?: boolean;
-    onClick?: () => void;
-  };
-  
+  buttonText: string;
+  variant?: ShadButtonVariant;
+  isDisabled?: boolean;
+  type: ShadButtonType;
+  isLoading?: boolean;
+  onClick?: () => void;
+  icon?: ReactNode;
+};

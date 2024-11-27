@@ -1,6 +1,8 @@
 import Layout from "@/components/global/Layout/Layout";
 import { certifications } from "@/lib/data/leiData";
 import AvailableCertificationsCard from "../components/AvailableCerticationsCard/AvailableCertificationsCard";
+import LeftBgVector from '@/assets/svg/left-bg-vector-image.svg';
+import RightBgVector from '@/assets/svg/right-bg-vector-images.svg';
 
 
 const AvailableCertifications = () => {
@@ -11,10 +13,11 @@ const AvailableCertifications = () => {
           {/* Background Images Container */}
           <div className="absolute inset-0 flex flex-row ">
             {/* Left Image */}
-            <div className="absolute top-0 left-0 w-1/2 h-full bg-[url('/assets/svg/left-bg-vector-image.svg')] bg-no-repeat bg-contain bg-left"></div>
+            <div  className="absolute top-0 left-0 w-1/2 h-full bg-no-repeat bg-contain bg-left"
+                 style={{ backgroundImage: `url(${LeftBgVector.src})` }}></div>
 
             {/* Right Image */}
-            <div className="absolute top-0 right-0 w-1/2 h-full bg-[url('/assets/svg/right-bg-vector-image.svg')] bg-no-repeat bg-contain bg-right"></div>
+            <div className="absolute top-0 right-0 w-1/2 h-full  bg-no-repeat bg-contain bg-right" style={{ backgroundImage: `url(${RightBgVector.src})` }}></div>
           </div>
 
           {/* <h1>dsufgysdfyugsuygf</h1> */}

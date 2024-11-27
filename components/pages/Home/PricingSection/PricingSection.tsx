@@ -31,6 +31,7 @@ const PricingSection = () => {
                         code. Updating data, transferring the LEI code or other activities
                         related to the code are all free of charge for our customers.
                     </p>
+                    <h3 className="mainText">NO HIDDEN FEES! ALL FEES ARE INCLUDED IN OUR LEI PRICE, GST WILL BE ADDED.</h3>
                 </Layout>
             </div>
             <div className="px-16">

@@ -1,0 +1,9 @@
+.label__wrapper{
+    @apply leading-7 text-sm text-gray-600;
+}
+
+.required-asterisk {
+    @apply text-gray-600;
+    margin-left: 4px;
+    font-size: 0.9em;
+}

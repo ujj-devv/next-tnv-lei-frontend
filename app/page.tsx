@@ -7,13 +7,11 @@ import LEIApplicationGuide from '@/components/pages/Home/LeiApplicationGuide/Lei
 import LEIBenefitsOverview from '@/components/pages/Home/LeiBenefitsOverview/LeiBenefitsOverview'
 import PricingSection from '@/components/pages/Home/PricingSection/PricingSection'
 import ServiceOverview from '@/components/pages/Home/ServiceOverview/ServiceOverview'
-import store from '@/store/store'
 import React from 'react'
-import { Provider } from 'react-redux'
 
 const page = () => {
   return (
-    <Provider store={store}>
+    <>
       <HeroSection />
       <ServiceOverview />
       <LEIBenefitsOverview />
@@ -22,7 +20,7 @@ const page = () => {
       <AvailableCertifications />
       <PricingSection/>
       <FAQSection />
-    </Provider>
+    </>
   )
 }
 

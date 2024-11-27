@@ -4,7 +4,7 @@ import "./button.scss"
 import { Loader2 } from "lucide-react"
 import { ShadButtonPropTypes } from "./button.types"
 
-const ShadButton = ({ buttonText, variant, type, isDisabled, isLoading, onClick }:ShadButtonPropTypes) => {
+const ShadButton = ({ buttonText, variant, type, isDisabled, isLoading, onClick, icon }: ShadButtonPropTypes) => {
     console.log('type is', type)
     return (
         <>
@@ -17,6 +17,7 @@ const ShadButton = ({ buttonText, variant, type, isDisabled, isLoading, onClick 
             >
                 {isLoading && <Loader2 className="animate-spin" />}
                 {buttonText}
+                {icon}
             </Button>
         </>
     )

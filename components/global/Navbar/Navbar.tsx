@@ -41,7 +41,7 @@ const NavBar = () => {
                     <div className="navLinks__wrapper">
                         {navlinks.map(({ name, id }) => (
 
-                            <Link key={id} className={` ${pathname === `/${id}` ? 'bg-[#2B5B55] px-4 py-2 rounded-md' : ''}`} href={id}>
+                            <Link key={id} className={` ${pathname === `/${id}` ? 'bg-[#2B5B55] px-4 py-2 rounded-md' : 'px-4 py-2 rounded-md'}`} href={id}>
                                 {name}
                             </Link>
                         ))}
@@ -86,7 +86,7 @@ const NavBar = () => {
                     {isOpen && (
                         <div className="absolute top-16 left-0 w-full bg-[#32736A] md:hidden flex flex-col items-start px-4 pb-4 z-10">
                             {navlinks.map(({ name, id }) => (
-                                <Link key={id} className={`text-white font-medium text-base w-full hover:bg-[#2B5B55] px-4 py-2 rounded-md ${pathname === '/' ? 'bg-[#2B5B55] px-4 py-2 rounded-md' : ''}`} href={id} onClick={toggleMenu}>
+                                <Link key={id} className={`text-white font-medium text-base w-full hover:bg-[#2B5B55] px-4 py-2 rounded-md ${pathname === '/' ? 'bg-[#2B5B55] px-4 py-2 rounded-md' : 'px-4 py-2 rounded-md'}`} href={id} onClick={toggleMenu}>
                                     {name}
                                 </Link>
                             ))}

@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "@/components/global/Navbar/Navbar";
-import { Roboto } from 'next/font/google'
 import Footer from "@/components/global/Footer/Footer";
- 
-const roboto = Roboto({
-  subsets:["latin"],
-  weight:["100","300","400", "500","700", "900"]
-})
+import { Providers } from "@/store/providers"; // Redux Provider wrapper
+import { Roboto } from "next/font/google";
 
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,12 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${roboto.className} antialiased`}
-      >
-        <NavBar/>
-        {children}
-        <Footer/>
+      <body className={`${roboto.className} antialiased`}>
+        <Providers>
+          <NavBar />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

@@ -1,19 +1,19 @@
 
 .button__wrapper-primary{
-    @apply bg-[#32736A] hover:bg-[#245f4b];
+    @apply bg-[#32736A] hover:bg-[#245f4b] w-full;
 }
 .button__wrapper-warning{
-    @apply bg-[#32736A] hover:bg-[#245f4b];
+    @apply bg-[#32736A] hover:bg-[#245f4b] w-full;
 }
 .button__wrapper-destructive{
-    @apply bg-[#32736A] hover:bg-[#245f4b];
+    @apply bg-[#32736A] hover:bg-[#245f4b] w-full;
 }
 .button__wrapper-signin{
-    @apply bg-[#32736A] hover:bg-[#245f4b] border ;
+    @apply bg-[#32736A] hover:bg-[#245f4b] border w-full ;
 }
 .button__wrapper-signup{
-    @apply bg-white hover:bg-white/80 text-[#32736A];
+    @apply bg-white hover:bg-white/80 text-[#32736A] w-full;
 }
 .button__wrapper-inactive{
-    @apply bg-[#F3FAF8] hover:bg-white/80 text-[#32736A];
+    @apply bg-[#F3FAF8] hover:bg-white/80 text-[#32736A] w-full;
 }
