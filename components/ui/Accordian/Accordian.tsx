@@ -1,26 +1,9 @@
 import { useState } from "react";
+import { RxCaretDown, RxCaretUp } from "react-icons/rx";
 
-export interface FaqItem {
-    id: number;
-    documentId: string;
-    key: string;
-    question: string;
-    answer: string;
-    createdAt: string;
-    updatedAt: string;
-    publishedAt: string;
-  }
-
-  export interface FaqsResponse {
-    data: FaqItem[];
-    meta: {
-      pagination: Pagination;
-    };
-  }
-
-export type AccordionProps = {
-  accordionData: FaqItem[];
-};
+interface AccordionProps {
+  accordionData: { id: number; question: string; answer: string }[]; // Define the expected shape
+}
 
 const Accordion = ({ accordionData }: AccordionProps) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -31,8 +14,8 @@ const Accordion = ({ accordionData }: AccordionProps) => {
 
   return (
     <div className="space-y-4 mx-auto">
-      {accordionData?.map(({ key, question, answer }, index) => (
-        <div key={key} className="border-b border-gray-300 w-full">
+      {accordionData?.map(({ question, answer }, index) => (
+        <div key={question} className="border-b border-gray-300 w-full">
           <button
             onClick={() => toggleAccordion(index)}
             className="flex justify-between items-center w-full py-4 text-left"

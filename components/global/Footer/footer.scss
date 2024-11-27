@@ -1,0 +1,32 @@
+.footer-top__wrapper{
+    @apply bg-[#373656];
+
+    .allLinks__wrapper{
+        @apply flex flex-col gap-8 p-8 md:flex-row md:gap-24 md:p-16;
+    }
+}
+
+.footer-bottom__wrapper{
+    @apply bg-[#2C2B40];
+
+    .allLinks__wrapper{
+        @apply flex flex-col text-center p-8 md:text-start  md:flex-row md:p-16 md:justify-between ;
+
+        .footerData__wrapper{
+            @apply flex flex-col gap-4;
+            .footerData{
+                @apply text-white font-normal text-sm;
+            }
+        }
+
+        .socialLinks__wrapper{
+            @apply flex gap-4 md:gap-8 justify-center md:justify-start mt-6 md:mt-0 md:self-end;
+    
+            .socialIcons{
+                @apply bg-[#F4F5FA] rounded-md flex justify-center items-center w-7 h-7  hover:bg-[#E6E8F3] transition-all duration-300;
+            }
+        }
+    }
+
+    
+}

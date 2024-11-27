@@ -1,0 +1,11 @@
+.footerLinkGroup__wrapper{
+    @apply flex flex-col items-center md:items-start gap-4 md:gap-6;
+
+    .title{
+        @apply text-white text-lg font-semibold;
+    }
+
+    .link{
+        @apply text-[#E6E8F3] hover:text-[#C3C6E0] font-normal text-sm md:text-lg;
+    }
+}
