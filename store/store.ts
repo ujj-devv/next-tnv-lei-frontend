@@ -1,3 +1,4 @@
+import { leiRecordsApi } from './api/glief/lei-records.slice';
 import { configureStore } from '@reduxjs/toolkit';
 import rootReducer from './rootReducer';
 import { faq } from './api/faq/faq';
@@ -8,7 +9,7 @@ import { cdf } from './api/cdf/cdf';
 const store = configureStore({
   reducer: rootReducer,
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(faq.middleware, product.middleware, cdf.middleware)
+    getDefaultMiddleware().concat(leiRecordsApi.middleware, faq.middleware, product.middleware, cdf.middleware)
 });
 
 export type AppDispatch = typeof store.dispatch;

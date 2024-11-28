@@ -11,6 +11,7 @@ const HeroSection = () => {
     const router = useRouter();
 
     const handleSearch = () => {
+        console.log('searchValue is', searchValue)
         if (searchValue) {
             router.push(`/search/${encodeURIComponent(searchValue)}`);
         }

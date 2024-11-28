@@ -22,7 +22,7 @@ const SearchBar = ({ placeholder, value, customClass, onClick, onChange }: Searc
                 onKeyDown={handleKeyDown}
             />
             <div className="w-fit">
-                <ShadButton buttonText={"Search"} type={ShadButtonType.PRIMARY} />
+                <ShadButton buttonText={"Search"} type={ShadButtonType.PRIMARY} onClick={onClick} />
             </div>
         </div>
     )

@@ -5,7 +5,7 @@ import { LeiMain, LeiRecordParamsType } from "./LeiRecords.types";
 export const leiRecordsApi = createApi({
   reducerPath: "leiRecordsApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: process.env.NEXT_PUBLIC_STRAPI_BASE_URL, 
+    baseUrl: process.env.NEXT_PUBLIC_BASE_URL, 
   }),
   endpoints: (builder) => ({
     getLeiRecords: builder.query<LeiMain, LeiRecordParamsType>({

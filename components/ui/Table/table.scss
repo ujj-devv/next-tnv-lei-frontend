@@ -1,19 +1,31 @@
-.shadTable__wrapper{
+.shadTable__wrapper {
     @apply rounded-md border;
 
-    .header{
+    .header {
         @apply bg-[#F3F4F6];
 
-        .head{
+        .head {
             @apply px-4 py-2 font-semibold text-gray-700;
         }
     }
 
-    .row{
-        @apply even:bg-gray-50 hover:bg-[#32736A] hover:text-white;
+    .row {
+        &:nth-child(even) {
+            background-color: #f9fafb; 
+        }
+        &:hover {
+            background-color: #32736A; 
+            color: #ffffff; 
 
-        .cell{
-            @apply px-4 py-2 text-gray-600 group-hover:text-white;
+            .cell {
+                color: #ffffff; 
+            }
+        }
+
+        .cell {
+            padding: 0.5rem 1rem; 
+            color: #4b5563; 
+            transition: color 0.2s ease; 
         }
     }
 }

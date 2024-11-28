@@ -15,7 +15,7 @@ const ShadSelect = ({ placeholder, options, label, onChange, value, required }: 
     return (
         <>
             <ShadLabel label={label} required={required} />
-            <div className="mt-[-12px] ">
+            <div className=" ">
                 <Select onValueChange={onChange} value={value}  >
                     <SelectTrigger className="shadSelect___trigger">
                         <SelectValue placeholder={placeholder} />
